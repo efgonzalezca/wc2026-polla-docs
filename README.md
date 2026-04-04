@@ -1,14 +1,14 @@
 # 🏆 Polla Mundialista · FIFA 2026
 
 > Aplicación web para gestionar predicciones del Mundial de Fútbol FIFA 2026 (Canadá · México · USA). Permite a los participantes registrar sus pronósticos de partidos, predecir el podio final y competir en un ranking en tiempo real.
-
-## 📌 Repositorios del Proyecto
-
-| Repositorio | Enlace |
-|-------------|--------|
-| Frontend (React) | _Próximamente_ |
-| Backend (API) | _Próximamente_ |
-| **Documentación** | [wc2026-polla-docs](https://github.com/efgonzalezca/wc2026-polla-docs) |
+>
+> ## 📌 Repositorios del Proyecto
+>
+> | Repositorio | Enlace |
+> |-------------|--------|
+> | Frontend (React) | _Próximamente_ |
+> | Backend (API) | _Próximamente_ |
+> | **Documentación** | [wc2026-polla-docs](https://github.com/efgonzalezca/wc2026-polla-docs) |
 
 ---
 
@@ -32,6 +32,12 @@ Muestra los **96 partidos** de la Fase de Grupos divididos en **12 grupos** (A�
 
 ![Fase de Grupos](03-partidos-fase-grupos.png)
 
+<details>
+  <summary>📱 Vista Mobile (390×844)</summary>summary>
+
+![Fase de Grupos Mobile](03-partidos-fase-grupos-mobile.png)
+</details>
+
 ### Modal: Detalle del Partido
 
 Al hacer clic en "Ver Detalles..." se abre un modal con: resultado real, predicción del usuario, puntos obtenidos, y una **tabla comparativa** con las predicciones de todos los participantes.
@@ -54,100 +60,132 @@ Ranking en **tiempo real** con podio visual (Top 3 con medallas 🥇🥈🥉) y 
 
 ![Clasificación](06-clasificacion.png)
 
----
+<details>
+  <summary>📱 Vista Mobile (390×844)</summary>summary>
 
-## 🏅 Predicción de Podio
+  ![Clasificación Mobile](06-clasificacion-mobile.png)
+  </details>
 
-Permite predecir Campeón (+30 pts), Subcampeón (+20 pts) y 3er Lugar (+10 pts) con fecha límite antes de la final. Incluye podio visual interactivo y selección mediante dropdowns.
+  ---
 
-![Podio](07-podio.png)
+  ## 🏅 Predicción de Podio
 
----
+  Permite predecir Campeón (+30 pts), Subcampeón (+20 pts) y 3er Lugar (+10 pts) con fecha límite antes de la final. Incluye podio visual interactivo y selección mediante dropdowns.
 
-## 🌎 Equipos
+  ![Podio](07-podio.png)
 
-Los **48 equipos** participantes organizados en 12 grupos (A–L), mostrando bandera, código FIFA, nombre completo y **ranking FIFA** actual.
+  <details>
+    <summary>📱 Vista Mobile (390×844)</summary>summary>
 
-![Equipos](08-equipos.png)
+    ![Podio Mobile](07-podio-mobile.png)
+    </details>
 
----
+    ---
 
-## 🧮 Simulador de Puntos
+    ## 🌎 Equipos
 
-Herramienta didáctica para calcular cuántos puntos obtendrías con una predicción. Muestra desglose detallado: acertar resultado (+2), goles local (+1), goles visitante (+1), bonus exacto (+3), bonus empate (+1). **Máximo: 7 pts por partido.**
+    Los **48 equipos** participantes organizados en 12 grupos (A–L), mostrando bandera, código FIFA, nombre completo y **ranking FIFA** actual.
 
-![Simulador](09-simulador.png)
+    ![Equipos](08-equipos.png)
 
----
+    <details>
+    <summary>📱 Vista Mobile (390×844)</summary>
 
-## 📖 Reglamento
+    ![Equipos Mobile](08-equipos-mobile.png)
+    </details>
 
-Reglas completas organizadas en acordeones: Sistema de Puntuación, Puntos de Podio, Distribución de Premios, Ejemplos de Cálculo y Reglas Generales.
+    ---
 
-![Reglamento](10-reglamento.png)
+    ## 🧮 Simulador de Puntos
 
----
+    Herramienta didáctica para calcular cuántos puntos obtendrías con una predicción. Muestra desglose detallado: acertar resultado (+2), goles local (+1), goles visitante (+1), bonus exacto (+3), bonus empate (+1). **Máximo: 7 pts por partido.**
 
-## 🛡️ Panel de Administración
+    ![Simulador](09-simulador.png)
 
-> Acceso exclusivo para usuarios con rol **admin**. El botón "Administrar" aparece en el sidebar solo con cuentas administradoras.
+    <details>
+    <summary>📱 Vista Mobile (390×844)</summary>
 
-### Administrar Resultados — Fase de Grupos
-Vista de todos los partidos organizados por fase (Fase de Grupos, Dieciseisavos, Octavos, Cuartos, Semifinales, 3er Puesto, Final) con filtro por grupo. Contador de partidos jugados vs pendientes.
+    ![Simulador Mobile](09-simulador-mobile.png)
+    </details>
 
-![Admin Panel](11-admin-panel.png)
+    ---
 
-### Administrar Resultados — Dieciseisavos (Pendientes)
-Los partidos pendientes tienen campos editables inline para ingresar goles. El admin ingresa el marcador y confirma con el botón ✓ azul. El sistema recalcula automáticamente los puntos de todos los participantes.
+    ## 📖 Reglamento
 
-![Admin Dieciseisavos](12-admin-dieciseisavos.png)
+    Reglas completas organizadas en acordeones: Sistema de Puntuación, Puntos de Podio, Distribución de Premios, Ejemplos de Cálculo y Reglas Generales.
 
----
+    ![Reglamento](10-reglamento.png)
 
-## 🎯 Sistema de Puntuación
+    <details>
+    <summary>📱 Vista Mobile (390×844)</summary>
 
-### Por partido (máximo 7 puntos)
+    ![Reglamento Mobile](10-reglamento-mobile.png)
+    </details>
 
-| Criterio | Puntos |
-|----------|--------|
-| Acertar resultado (G/E/P) | +2 pts |
-| Acertar goles local | +1 pt |
-| Acertar goles visitante | +1 pt |
-| Bonus marcador exacto | +3 pts |
-| Bonus empate no exacto | +1 pt |
-| **Total máximo** | **7 pts** |
+    ---
 
-### Por predicción de podio
+    ## 🛡️ Panel de Administración
 
-| Posición | Puntos |
-|----------|--------|
-| 🥇 Campeón | +30 pts |
-| 🥈 Subcampeón | +20 pts |
-| 🥉 3er Lugar | +10 pts |
+    > Acceso exclusivo para usuarios con rol **admin**. El botón "Administrar" aparece en el sidebar solo con cuentas administradoras.
 
----
+    ### Administrar Resultados — Fase de Grupos
+    Vista de todos los partidos organizados por fase (Fase de Grupos, Dieciseisavos, Octavos, Cuartos, Semifinales, 3er Puesto, Final) con filtro por grupo. Contador de partidos jugados vs pendientes.
 
-## 🗂️ Navegación
+    ![Admin Panel](11-admin-panel.png)
 
-| Sección | Ruta | Rol |
-|---------|------|-----|
-| Partidos | `/` | Todos |
-| Clasificación | `/ranking` | Todos |
-| Podio | `/podium` | Todos |
-| Equipos | `/teams` | Todos |
-| Simulador | `/simulator` | Todos |
-| Reglamento | `/rules` | Todos |
-| Administrar | `/admin` | Solo admin |
+    ### Administrar Resultados — Dieciseisavos (Pendientes)
+    Los partidos pendientes tienen campos editables inline para ingresar goles. El admin ingresa el marcador y confirma con el botón ✓ azul. El sistema recalcula automáticamente los puntos de todos los participantes.
 
----
+    ![Admin Dieciseisavos](12-admin-dieciseisavos.png)
 
-## 🛠️ Stack Tecnológico
+    ---
 
-- **Frontend**: React + Vite
-- **Estilos**: CSS con diseño responsive
-- **Autenticación**: Sistema de login con sesiones y roles (admin / usuario)
-- **Tiempo real**: Ranking actualizado en tiempo real
+    ## 🎯 Sistema de Puntuación
 
----
+    ### Por partido (máximo 7 puntos)
 
-*Documentación generada mediante recorrido automatizado de la aplicación · FIFA 2026™ · Canadá · México · USA*
+    | Criterio | Puntos |
+    |----------|--------|
+    | Acertar resultado (G/E/P) | +2 pts |
+    | Acertar goles local | +1 pt |
+    | Acertar goles visitante | +1 pt |
+    | Bonus marcador exacto | +3 pts |
+    | Bonus empate no exacto | +1 pt |
+    | **Total máximo** | **7 pts** |
+
+    ### Por predicción de podio
+
+    | Posición | Puntos |
+    |----------|--------|
+    | 🥇 Campeón | +30 pts |
+    | 🥈 Subcampeón | +20 pts |
+    | 🥉 3er Lugar | +10 pts |
+
+    ---
+
+    ## 🗂️ Navegación
+
+    | Sección | Ruta | Rol |
+    |---------|------|-----|
+    | Partidos | `/` | Todos |
+    | Clasificación | `/ranking` | Todos |
+    | Podio | `/podium` | Todos |
+    | Equipos | `/teams` | Todos |
+    | Simulador | `/simulator` | Todos |
+    | Reglamento | `/rules` | Todos |
+    | Administrar | `/admin` | Solo admin |
+
+    ---
+
+    ## 🛠️ Stack Tecnológico
+
+    - **Frontend**: React + Vite
+    - **Estilos**: CSS con diseño responsive
+    - **Autenticación**: Sistema de login con sesiones y roles (admin / usuario)
+    - **Tiempo real**: Ranking actualizado en tiempo real
+
+    ---
+
+    *Documentación generada mediante recorrido automatizado de la aplicación · FIFA 2026™ · Canadá · México · USA*
+</summary>
+</details>
