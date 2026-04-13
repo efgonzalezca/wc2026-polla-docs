@@ -6,7 +6,7 @@
 >
 > | Repositorio | Enlace |
 > |-------------|--------|
-> | Frontend (React) | _Próximamente_ |
+> | Frontend (React) | [world-cup-2026-frontend](https://github.com/efgonzalezca/world-cup-2026-frontend) |
 > | Backend (API) | _Próximamente_ |
 > | **Documentación** | [wc2026-polla-docs](https://github.com/efgonzalezca/wc2026-polla-docs) |
 
